@@ -53,7 +53,9 @@ public class BitacoraMain {
                 }
                 informacion.add(hashMap.toString());
             }
-            
+             if (!resultSet.next()) {
+                informacion.add("");
+            }
             
         } catch (Exception e) {
             System.out.println(e.getMessage());
